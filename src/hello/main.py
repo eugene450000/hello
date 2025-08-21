@@ -18,7 +18,7 @@ def get_parser():
                         "--bind-host",
                         type=str,
                         help="Bind host",
-                        default="127.0.0.1")
+                        default="0.0.0.0")
     return parser
 
 
