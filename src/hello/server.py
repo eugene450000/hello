@@ -6,7 +6,7 @@ async def handle_name(request):
     # http://127.0.0.1:8080/?name=User
     params = request.rel_url.query
     name = params["name"] if "name" in params else "Anonymous"
-    text = f"Hello {name} from {socket.gethostname()}!\n"
+    text = f"Hello {name} from my  {socket.gethostname()}!\n"
     return web.Response(text=text, content_type="text/html")
 
 
